@@ -10,7 +10,7 @@ export const formSlice = createSlice({
       state.formFields.push(action.payload);
     },
     removeField: (state, action) => {
-      return state.formFields.filter(
+      state.formFields = state.formFields.filter(
         (field, index) => index !== action.payload
       );
     },
