@@ -32,7 +32,7 @@ const Form = () => {
   };
 
   return (
-    <div className="max-w-md mx-auto mt-8">
+    <div className="max-w-[55rem] text-center mx-auto mt-8 ">
       <h1 className="text-2xl font-bold mb-4">Dynamic Form Generator</h1>
       {formFields.map((field, index) => (
         <FormField
