@@ -9,7 +9,7 @@ const FormField = ({ field, onChange, onDelete }) => {
             type="text"
             value={field.value}
             onChange={(e) => onChange(e.target.value)}
-            className="border border-gray-300"
+            className="border text-black border-gray-300"
           />
         );
       case "textarea":

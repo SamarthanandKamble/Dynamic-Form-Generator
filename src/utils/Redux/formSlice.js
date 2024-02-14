@@ -14,6 +14,10 @@ export const formSlice = createSlice({
         (_, index) => index !== action.payload
       );
     },
+    updateField: (state, action) => {
+      const { index, value } = action.payload;
+      state.formFields[index].value = value;
+    },
   },
 });
 
