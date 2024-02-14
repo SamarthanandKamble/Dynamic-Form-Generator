@@ -10,6 +10,7 @@ const FormField = ({ field, onChange, onDelete }) => {
             type="text"
             value={field.value}
             onChange={(e) => onChange(e.target.value)}
+            className="border border-gray-300"
           />
         );
       case "textarea":
@@ -17,6 +18,7 @@ const FormField = ({ field, onChange, onDelete }) => {
           <textarea
             value={field.value}
             onChange={(e) => onChange(e.target.value)}
+            className="border border-gray-300"
           />
         );
       case "dropdown":
@@ -37,6 +39,7 @@ const FormField = ({ field, onChange, onDelete }) => {
           <input
             type="checkbox"
             checked={field.value}
+            className="border border-gray-300"
             onChange={(e) => onChange(e.target.checked)}
           />
         );
@@ -46,6 +49,7 @@ const FormField = ({ field, onChange, onDelete }) => {
             type="radio"
             checked={field.value}
             onChange={(e) => onChange(e.target.checked)}
+            className="border border-gray-300"
           />
         );
       default:
@@ -57,7 +61,11 @@ const FormField = ({ field, onChange, onDelete }) => {
     <div className="mb-4">
       <label className="block text-sm font-bold mb-2">{field.label}</label>
       {renderField()}
-      <button className="text-red-500" onClick={onDelete}>
+
+      <button
+        className="px-2 py-1 ml-2 bg-red-500 text-white rounded-md"
+        onClick={onDelete}
+      >
         Remove
       </button>
     </div>

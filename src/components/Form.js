@@ -42,32 +42,32 @@ const Form = () => {
       ))}
       <div className="mb-4">
         <button
-          className="bg-blue-500 text-white px-4 py-2"
+          className="bg-green-500 text-white px-4 py-2 rounded-md"
           onClick={() => handleAddField("text")}
         >
           Add Text Field
         </button>
         <button
-          className="bg-green-500 text-white px-4 py-2 ml-2"
+          className="bg-green-500 text-white px-4 py-2 ml-2 rounded-md"
           onClick={() => handleAddField("dropdown")}
         >
           Add Dropdown
         </button>
         <button
-          className="bg-yellow-500 text-white px-4 py-2 ml-2"
+          className="bg-green-500 text-white px-4 py-2 ml-2 rounded-md"
           onClick={() => handleAddField("checkbox")}
         >
           Add Checkbox
         </button>
         <button
-          className="bg-red-500 text-white px-4 py-2 ml-2"
+          className="bg-green-500 text-white px-4 py-2 ml-2 rounded-md"
           onClick={() => handleAddField("radio")}
         >
           Add Radio Button
         </button>
       </div>
       <button
-        className="bg-purple-500 text-white px-4 py-2"
+        className="bg-red-500 text-white px-4 py-2 rounded-md"
         onClick={handleSubmit}
       >
         Submit

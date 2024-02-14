@@ -11,12 +11,8 @@ export const formSlice = createSlice({
     },
     removeField: (state, action) => {
       state.formFields = state.formFields.filter(
-        (field, index) => index !== action.payload
+        (_, index) => index !== action.payload
       );
-    },
-    updateField: (state, action) => {
-      const { index, value } = action.payload;
-      state.formFields[index].value = value;
     },
   },
 });
