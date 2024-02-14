@@ -1,7 +1,6 @@
 import React from "react";
 
 const FormField = ({ field, onChange, onDelete }) => {
-  console.log("Field:", field);
   const renderField = () => {
     switch (field.type) {
       case "text":
