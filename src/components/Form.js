@@ -8,14 +8,12 @@ const Form = () => {
   const dispatch = useDispatch();
 
   const handleAddField = (type) => {
-    console.log("type:", type);
     const newField = {
       label: `${type}`,
       type,
       value: "",
       options: type === "dropdown" ? ["Option 1", "Option 2", "Option 3"] : [],
     };
-    console.log("field created :", newField);
     dispatch(addField(newField));
   };
 
